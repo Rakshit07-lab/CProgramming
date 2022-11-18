@@ -1,7 +1,5 @@
 /*
 Name: Rakshit Raj
-Roll no: 22ME10069
-Group no:
 Description: Program to arrange 3 numbers in non-decreasing order
 */
 
