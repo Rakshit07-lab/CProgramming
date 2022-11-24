@@ -1,0 +1,33 @@
+/*
+Name: Rakshit Raj
+Description: Reading 3 integers, printing them suitably, determining which of them are positive and which are negative 
+and printing the largest among them without using if else
+*/
+
+#include<stdio.h>
+#include<math.h>
+
+main()
+{
+    int p,q,r;
+    printf("Enter the value of p, q, r.\n");
+    scanf("%d%d%d",&p,&q,&r);
+    printf("The three numbers are as follows:\n");
+    printf("%d, %d, %d\n\n",p,q,r);
+
+    float avg;
+    avg=(float)(p+q+r)/3.0;
+    printf("Average = %f\n\n",avg);
+
+    int pos,neg;
+    pos=(p>0)+(q>0)+(r>0);
+    printf("No. of positive Integers are %d\n\n",pos);
+    neg=(p<0)+(q<0)+(r<0);
+    printf("No. of negative Integers are %d\n\n",neg);
+
+    int largest=((p>=q)&&(p>=r))*p+((q>=r)&&(q>=p))*q+((r>=p)&&(r>=q))*r;
+    printf("The Largest among three is %d",largest);
+
+
+
+}
